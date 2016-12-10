@@ -1,0 +1,39 @@
+body {
+  font-family:'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #455A64;
+}
+.logo {
+margin-bottom: 20px;
+margin-top: 25px;
+text-align: center;
+display: inline-block;
+color:#FFFFFF;
+font: 800 30px "Open Sans", sans serif;
+}
+.enter-button {
+  display: block;
+  background-color: #FFC107;
+  color:#FFFFFF;
+  width: 165px;
+  padding: 5px;
+  margin: 25px auto;
+}
+.enter-button:hover {
+  background-color:#FFD773;
+  color:#FFFFFF;
+}
+.user-input-title {
+  display: block;
+  width: 150px;
+  text-align: left;
+  margin: 25px auto;
+  padding: 4px;
+}
+.user-input-website {
+  display: block;
+  width:150px;
+  text-align: left;
+  margin: 25px auto;
+  padding: 4px;
+}
