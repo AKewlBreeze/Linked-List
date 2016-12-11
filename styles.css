@@ -1,0 +1,55 @@
+body {
+  background-color: #455A64;
+}
+
+.left-section{
+  font-family:'Open Sans', sans-serif;
+  width:50%;
+  border: solid red 1px;
+  height:700px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.user-input-section{
+  text-align: center;
+}
+
+.linked-title{
+  color:#FFFFFF;
+  display: inline-block;
+  font: 800 30px "Open Sans", sans serif;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.user-input-title {
+  display: block;
+  margin: 25px auto;
+  padding: 4px;
+  text-align: left;
+  width: 150px;
+}
+
+.user-input-url {
+  display: block;
+  margin: 25px auto;
+  padding: 4px;
+  text-align: left;
+  width:150px;
+}
+
+.enter-button {
+  background-color: #FFC107;
+  color:#FFFFFF;
+  display: block;
+  width: 165px;
+  padding: 5px;
+  margin: 25px auto;
+}
+
+.enter-button:hover {
+  background-color:#FFD773;
+  color:#FFFFFF;
+}
