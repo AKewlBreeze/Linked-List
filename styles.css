@@ -84,9 +84,10 @@ padding-right: 5px;
 
 .bookmark-card {
   border: solid 2px #607D8B;
-  height: 112px;
-  width: 350px;
+  height: 120px;
+  width: 400px;
   background-color: white;
+  padding-top:25px;
   margin: auto auto;
   text-align: left;
 }
