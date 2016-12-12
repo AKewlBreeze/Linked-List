@@ -4,18 +4,22 @@ var userEnterButton = document.querySelector(".enter-button");
 
 console.log("hi")
 
-window.onload = function(){
-  disableInputFeilds();
-}
+// window.onload = function(){
+//   disableInputFeilds();
+// }
 
 
-function disableInputFeilds(){
-  userWebsiteTitle.disabled = true;
-  userWebsiteUrl.disabled = true;
-  userEnterButton.disabled = true;
-}
+// function disableInputFeilds(){
+//   userWebsiteTitle.disabled = true;
+//   userWebsiteUrl.disabled = true;
+//   userEnterButton.disabled = true;
+// }
 
 function userInputValues(){
-  var display = userWebsiteTitle.value;
+  var display = userWebsiteTitle.text;
   console.log(display);
+}
+
+function collectUserTitle(){
+  var title = userWebsiteTitle.text;
 }

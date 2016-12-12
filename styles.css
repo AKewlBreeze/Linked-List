@@ -6,10 +6,21 @@ body {
   font-family:'Open Sans', sans-serif;
   width:50%;
   border: solid red 1px;
-  height:700px;
+  height:100%;
   text-align: center;
   padding-top: 100px;
   background-color: #455A64;
+  position:absolute;
+  padding: 50vh 0;
+}
+
+header{
+  position: relative;
+}
+
+.logo{
+margin-bottom: -8px;
+padding-right: 5px;
 }
 
 .user-input-section{
@@ -19,41 +30,44 @@ body {
 .linked-title{
   color:#FFFFFF;
   display: inline-block;
-  font: 800 30px "Open Sans", sans serif;
-  margin-bottom: 20px;
-  margin-top: 25px;
+  font: 800 40px "Open Sans", sans serif;
   text-align: center;
+  /*width: 50px;*/
 }
 
 .user-input-title {
   display: block;
-  margin: 25px auto;
+  margin: 5% auto;
   padding: 4px;
   text-align: left;
-  width: 150px;
+  height: 20px;
+  width: 270px;
 }
 
 .user-input-url {
   display: block;
-  margin: 25px auto;
+  margin: 5% auto;
   padding: 4px;
   text-align: left;
-  width:150px;
+  width:270px;
+  height: 20px;
 }
 
 .enter-button {
   background-color: #FFC107;
   color:#FFFFFF;
   display: block;
-  width: 165px;
-  padding: 5px;
-  margin: 25px auto;
+  font: 800 20px "Open Sans", sans serif;
+  width: 287px;
+  margin: auto;
+  height: 35px;
 }
 
 .enter-button:hover {
   background-color:#FFD773;
   color:#FFFFFF;
 }
+
 
 /*right section*/
 
