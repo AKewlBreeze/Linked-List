@@ -73,12 +73,12 @@ padding-right: 5px;
 
 .right-section{
   width:50%;
-  height:800px;
+  height:1180px;
   float: right;
   border: solid yellow 1px;
   text-align: center;
   background-color: #CFD8DC;
-  padding: 10px;
+  padding: 5vh 0;
 
 }
 
