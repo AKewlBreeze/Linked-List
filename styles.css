@@ -1,5 +1,5 @@
 body {
-  background-color: #455A64;
+
 }
 
 .left-section{
@@ -9,6 +9,7 @@ body {
   height:700px;
   text-align: center;
   padding-top: 100px;
+  background-color: #455A64;
 }
 
 .user-input-section{
@@ -52,4 +53,110 @@ body {
 .enter-button:hover {
   background-color:#FFD773;
   color:#FFFFFF;
+}
+
+/*right section*/
+
+.right-section{
+  width:50%;
+  height:800px;
+  float: right;
+  border: solid yellow 1px;
+  text-align: center;
+  background-color: #CFD8DC;
+  padding: 10px;
+
+}
+
+.bookmark-card {
+  border: solid 2px #607D8B;
+  height: 112px;
+  width: 350px;
+  background-color: white;
+  margin: auto auto;
+  text-align: left;
+}
+
+.read-bookmark-card{
+  background-color: #F2F4F4;
+}
+
+.card-title{
+  color: #455A64;
+  font-size: 15px;
+  margin: 5px;
+}
+
+hr {
+  border: 0;
+  margin-top:7px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color:#CFD8DC;
+  background-color: #CFD8DC;
+  height: 1px;
+}
+
+.title-underline{
+  font: 800 20px "Open Sans", sans-serif;
+  color:#455A64;
+  margin-left: 15px;
+}
+
+
+.url-underline{
+  font: 400 20px "Open Sans", sans-serif;
+  margin-top: 3px;
+  margin-left: 15px;
+  color:#607D8B;
+  border-bottom: solid .5px #F2F4F4;
+  border-bottom-width: 100%;
+  margin-left:15px;
+  margin-right:15px;
+}
+
+.url-underline:hover{
+  font: 800 20px "Open Sans", sans-serif;
+  color: #455A64;
+  border-bottom: solid .5px #FFC107;
+  border-bottom-width:100%;
+}
+
+.read-url-underline{
+  border-bottom: solid .5px #CFD8DC;
+  border-bottom-width:100%;
+
+}
+
+.read{
+  margin-left: 15px;
+  font: 400 15px "Open Sans", sans-serif;
+  color:#455A64;
+  border-bottom: solid .5px #F2F4F4;
+  border-bottom-width: 100%;
+}
+
+.readBookmark{
+  color:#F05A28;
+}
+
+.read:hover{
+  border-bottom: solid .5px #FFC107;
+  border-bottom-width:100%;
+  font: 800 15px "Open Sans", sans-serif;
+}
+
+
+.delete{
+  font: 400 15px "Open Sans", sans-serif;
+  color:#455A64;
+  float: right;
+  margin-right:15px;
+  border-bottom: solid .5px #F2F4F4;
+  border-bottom-width: 100%;
+}
+
+.delete:hover{
+  border-bottom: solid .5px #FFC107;
+  border-bottom-width:100%;
 }
