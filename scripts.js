@@ -1,25 +1,25 @@
 var userWebsiteTitle = document.querySelector(".user-input-title");
 var userWebsiteUrl = document.querySelector(".user-input-url");
 var userEnterButton = document.querySelector(".enter-button");
-
+var websiteTitleInput = document.querySelector(".title-underline");
+var websiteUrlInput = document.querySelector(".url-underline");
 console.log("hi")
 
-// window.onload = function(){
-//   disableInputFeilds();
-// }
 
+userEnterButton.addEventListener("click", function(){
 
-// function disableInputFeilds(){
-//   userWebsiteTitle.disabled = true;
-//   userWebsiteUrl.disabled = true;
-//   userEnterButton.disabled = true;
-// }
+  enterUserTitle();
+  enterUserUrl();
+});
 
-function userInputValues(){
-  var display = userWebsiteTitle.text;
+function enterUserTitle(){
+  var display = userWebsiteTitle.value;
+  websiteTitleInput.innerText = display;
   console.log(display);
 }
 
-function collectUserTitle(){
-  var title = userWebsiteTitle.text;
+function enterUserUrl(){
+  var displayUrl = userWebsiteUrl.value;
+  websiteUrlInput.innerText = displayUrl;
+  console.log(displayUrl);
 }
