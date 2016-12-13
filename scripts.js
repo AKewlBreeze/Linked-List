@@ -3,6 +3,9 @@
 // var userWebsiteUrl = $(".user-input-url");
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
+var userInputTitle = $(".user-input-title");
+var deleteInputRightSection =$(".enter-button");
+
 
 function bookmarkContent(){
   var userTitle = $(".user-input-title").val();
@@ -24,14 +27,27 @@ function bookmarkContent(){
 
 $(userEnterButton).on("click", function(){
     bookmarkContent();
+    console.log(bookmarkContent);
     read();
-
 });
 
-function read (){
-  $(".read").on("click", function(){
-    console.log("yep");
-    $(this).toggleClass("read-bookmark");
+// deleteInputRightSection.addEventListener("click", function(){
+//   bookmarkContent
+// })
 
-  });
+// function deleteBookmark (){
+//   var clear= "";
+//   userInputTitle.innerText = clear;
+//   console.log("hi")
 }
+// function read (){
+//   $(".read").on("click", function(){
+//     console.log("yep");
+//     $(this).toggleClass("read-bookmark");
+//   });
+
+
+
+// $(userEnterButton).click (function(){
+//   if (userInputTitle = " ") {
+//     console.log('hi"');
