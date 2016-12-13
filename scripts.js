@@ -28,8 +28,6 @@ $(userEnterButton).on("click", function(){
     $(this).toggleClass("read-bookmark");
 });
 
-  $(".right-section").on("click", ".delete", function(){
-    $(this).("bookmark-card")remove();
-    console.log("yep");
-    // $(".bookmark-card").remove(this);
+$(".right-section").on("click", ".delete", function(){
+  $(this).parent("div").remove();
 });

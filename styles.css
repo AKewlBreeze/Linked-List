@@ -83,37 +83,31 @@ padding-right: 5px;
 
 /*right section*/
 
-
-
-.bookmark-cards-display{
-background-color: #455A64;
-border: solid red 3px;
-margin-left: 500px;
-font-family:'Open Sans', sans-serif;
-height: 100%;
-text-align: center;
-width:100%;
-}
-
 .right-section{
+  padding-top: 10px;
   width:50%;
   border:solid 3px red;
-  height:100%;
+  height:100vh;
   font-family:'Open Sans', sans-serif;
   text-align: center;
-  /*padding-top: 100px;*/
   background-color: #CFD8DC;
-  /*padding: 5vh 0;*/
+}
 
+.user-initialization{
+  border:solid red 1px;
+  height:50%;
+  width:100%;
+  position:relative;
+  top: 20%;
 }
 
 .bookmark-card {
   border: solid 2px #607D8B;
-  height: 120px;
+  height: 100px;
   width: 400px;
   background-color: white;
-  padding-top:25px;
-  margin: auto auto;
+  padding-top:4px;
+  margin: auto auto 10px;
   text-align: left;
 }
 
@@ -121,15 +115,9 @@ width:100%;
   background-color: #F2F4F4;
 }
 
-.card-title{
-  color: #455A64;
-  font-size: 15px;
-  margin: 5px;
-}
-
 hr {
   border: 0;
-  margin-top:7px;
+  margin-top:;
   margin-right: 15px;
   margin-left: 15px;
   color:#CFD8DC;
@@ -138,13 +126,13 @@ hr {
 }
 
 .title-underline{
-  font: 800 20px "Open Sans", sans-serif;
+  font: 800 15px "Open Sans", sans-serif;
   color:#455A64;
   margin-left: 15px;
 }
 
 .url-underline{
-  font: 400 20px "Open Sans", sans-serif;
+  font: 400 15px "Open Sans", sans-serif;
   margin-top: 3px;
   margin-left: 15px;
   color:#607D8B;
@@ -155,7 +143,7 @@ hr {
 }
 
 .url-underline:hover{
-  font: 800 20px "Open Sans", sans-serif;
+  font: 800 15px "Open Sans", sans-serif;
   color: #455A64;
   border-bottom: solid .5px #FFC107;
   border-bottom-width:100%;
@@ -164,7 +152,6 @@ hr {
 .read-url-underline{
   border-bottom: solid .5px #CFD8DC;
   border-bottom-width:50%;
-
 }
 
 .read{
@@ -173,7 +160,6 @@ hr {
   color:#455A64;
   border-bottom: solid .5px #F2F4F4;
   border-bottom-width: 100%;
-
 }
 
 .read-bookmark{
@@ -187,7 +173,6 @@ hr {
   font: 800 15px "Open Sans", sans-serif;
 }
 
-
 .delete{
   font: 400 15px "Open Sans", sans-serif;
   color:#455A64;
@@ -200,4 +185,38 @@ hr {
 .delete:hover{
   border-bottom: solid .5px #FFC107;
   border-bottom-width:100%;
+}
+
+
+@media (min-width: 400px) {
+  body{
+    background-color: red;
+  }
+
+  .combined-sections{
+  display:flex;
+  /*flex-direction: row;
+  display: inline-flex
+  justify-content: space-around;*/
+  border: solid orange 3px;
+  height: 100vh;
+  }
+  .left-section{
+    width:50%;
+    height: 100%;
+    border: solid 3px black;
+    text-align: center;
+    background-color: #455A64;
+    /*padding: 15vh 0;*/
+
+  }
+  .right-section{
+    padding-top: 10px;
+    width:50%;
+    border:solid 3px red;
+    height:100vh;
+    font-family:'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #CFD8DC;
+  }
 }
