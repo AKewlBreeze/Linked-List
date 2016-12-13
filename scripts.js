@@ -24,14 +24,15 @@ function bookmarkContent(){
 
 $(userEnterButton).on("click", function(){
     bookmarkContent();
-    read();
+    // read();
 
 });
+//
+// function read (){
+// });
+// }
 
-function read (){
-  $(".read").on("click", function(){
-    console.log("yep");
+  $(".right-section").on("click", ".read", function(){
     $(this).toggleClass("read-bookmark");
-
-  });
-}
+    console.log("yep");
+});
