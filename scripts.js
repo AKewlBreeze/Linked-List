@@ -1,6 +1,6 @@
-
-var userWebsiteTitle = $(".user-input-title").val();
-var userWebsiteUrl = $(".user-input-url");
+//
+// var userWebsiteTitle = $(".user-input-title").val();
+// var userWebsiteUrl = $(".user-input-url");
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
 
@@ -24,32 +24,14 @@ function bookmarkContent(){
 
 $(userEnterButton).on("click", function(){
     bookmarkContent();
-    var websiteUrlInput = $(".url-underline");
-    userInputValues();
+    read();
+
 });
 
-function userInputValues(){
-  $(bookmarkTitle).text(userWebsiteTitle.val());
-  console.log(bookmarkTitle);
+function read (){
+  $(".read").on("click", function(){
+    console.log("yep");
+    $(this).toggleClass("read-bookmark");
+
+  });
 }
-
-
-
-
-
-
-// function enterUserTitle(){
-//   var display = $(".userWebsiteTitle").val();
-//   $("websiteTitleInput").text("display");
-// }
-//
-// function enterUserUrl(){
-//   var displayUrl = $("userWebsiteUrl").val();
-//   $("websiteUrlInput").text("displayUrl");
-// }
-
-
-
-
-
-// get the user submited info and assign to a variable and use ${} selection in the concatenation

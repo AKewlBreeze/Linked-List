@@ -163,7 +163,7 @@ hr {
 
 .read-url-underline{
   border-bottom: solid .5px #CFD8DC;
-  border-bottom-width:100%;
+  border-bottom-width:50%;
 
 }
 
@@ -173,10 +173,12 @@ hr {
   color:#455A64;
   border-bottom: solid .5px #F2F4F4;
   border-bottom-width: 100%;
+
 }
 
-.readBookmark{
+.read-bookmark{
   color:#F05A28;
+  background-color: #F2F4F4;
 }
 
 .read:hover{
