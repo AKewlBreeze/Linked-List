@@ -1,6 +1,4 @@
-//
-// var userWebsiteTitle = $(".user-input-title").val();
-// var userWebsiteUrl = $(".user-input-url");
+
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
 
@@ -24,15 +22,14 @@ function bookmarkContent(){
 
 $(userEnterButton).on("click", function(){
     bookmarkContent();
-    // read();
-
 });
-//
-// function read (){
-// });
-// }
 
   $(".right-section").on("click", ".read", function(){
     $(this).toggleClass("read-bookmark");
+});
+
+  $(".right-section").on("click", ".delete", function(){
+    $(this).("bookmark-card")remove();
     console.log("yep");
+    // $(".bookmark-card").remove(this);
 });
