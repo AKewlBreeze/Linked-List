@@ -1,4 +1,4 @@
-//
+
 
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
@@ -30,6 +30,7 @@ function bookmarkContent(title,url){
  );
 }
 
+
 function userError(title,url){
   if (title === "" || url === ""){
     alert("Error, please enter a valid Title and URL");
@@ -37,3 +38,15 @@ function userError(title,url){
     bookmarkContent(title,url);
   }
 }
+
+$(userEnterButton).on("click", function(){
+    bookmarkContent();
+});
+
+  $(".right-section").on("click", ".read", function(){
+    $(this).toggleClass("read-bookmark");
+});
+
+$(".right-section").on("click", ".delete", function(){
+  $(this).parent("div").remove();
+});
