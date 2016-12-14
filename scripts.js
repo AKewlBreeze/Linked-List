@@ -70,10 +70,6 @@ function userError(title,url){
   }
 }
 
-// $(userEnterButton).on("click", function(){
-//     bookmarkContent();
-// });
-
   $(".right-section").on("click", ".read", function(){
     $(this).toggleClass("read-bookmark");
 });
