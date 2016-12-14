@@ -1,16 +1,5 @@
 .combined-sections{
 display:flex;
-/*flex-direction: row;
-display: inline-flex
-justify-content: space-around;*/
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-/*border: solid orange 3px;*/
-=======
->>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
->>>>>>> origin/sm-third-version
 height: 100vh;
 }
 
@@ -26,16 +15,8 @@ height: 100vh;
 .left-section{
   width:50%;
   height: 100%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  /*border: solid 3px black;*/
-=======
->>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
->>>>>>> origin/sm-third-version
   text-align: center;
   background-color: #455A64;
-  /*padding: 15vh 0;*/
 
 }
 
@@ -44,7 +25,7 @@ header{
 }
 
 .logo{
-margin-bottom: -8px;
+margin-bottom: -5px;
 padding-right: 5px;
 }
 
@@ -55,7 +36,7 @@ padding-right: 5px;
 .linked-title{
   color:#FFFFFF;
   display: inline-block;
-  font: 800 40px "Open Sans", sans serif;
+  font: 800 30px "Open Sans", sans serif;
   text-align: center;
   /*width: 50px;*/
 }
@@ -95,29 +76,11 @@ padding-right: 5px;
 
 /*right section*/
 
-/*.bookmark-cards-display{
-background-color: #455A64;
-border: solid red 3px;
-margin-left: 500px;
-font-family:'Open Sans', sans-serif;
-height: 100%;
-text-align: center;
-width:100%;
-}*/
-
 
 .right-section{
   padding-top: 10px;
   width:50%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  /*border:solid 3px red;*/
   height:100%;
-=======
-  height:100vh;
->>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
->>>>>>> origin/sm-third-version
   font-family:'Open Sans', sans-serif;
   text-align: center;
   background-color: #CFD8DC;
@@ -176,11 +139,14 @@ hr {
   color: #455A64;
   border-bottom: solid .5px #FFC107;
   border-bottom-width:100%;
+  display: inline-block;
 }
 
 .read-url-underline{
   border-bottom: solid .5px #CFD8DC;
-  border-bottom-width:50%;
+  border-bottom-width:100%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .read{
@@ -219,7 +185,7 @@ hr {
 
 @media (max-width: 484px) {
   body{
-    background-color: red;
+    background-color: #CFD8DC;
   }
 
   .user-input-title {
@@ -253,14 +219,12 @@ hr {
   .combined-sections{
   display:flex;
   flex-wrap:wrap;
-
   height: 70vh;
   }
 
   .left-section{
     width:100%;
     height: 100%;
-
     text-align: center;
     background-color: #455A64;
     padding: 0;
@@ -290,4 +254,7 @@ hr {
     margin: auto auto 10px;
     text-align: left;
   }
-}
+  .linked-title{
+    width:50%;
+    display: block;
+  }
