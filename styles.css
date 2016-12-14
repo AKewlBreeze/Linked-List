@@ -183,7 +183,9 @@ hr {
 }
 
 .read-link{
-  color:#F05A28;
+  color: #F05A28;
+  border: none;
+  margin-left: 15px;
 }
 
 .read:hover{
