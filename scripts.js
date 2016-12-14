@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 //
+=======
+>>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
 
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
@@ -30,6 +33,7 @@ function bookmarkContent(title,url){
  );
 }
 
+<<<<<<< HEAD
 function userError(title,url){
   if (title === "" || url === ""){
     alert("Error, please enter a valid Title and URL");
@@ -37,3 +41,16 @@ function userError(title,url){
     bookmarkContent(title,url);
   }
 }
+=======
+$(userEnterButton).on("click", function(){
+    bookmarkContent();
+});
+
+  $(".right-section").on("click", ".read", function(){
+    $(this).toggleClass("read-bookmark");
+});
+
+$(".right-section").on("click", ".delete", function(){
+  $(this).parent("div").remove();
+});
+>>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
