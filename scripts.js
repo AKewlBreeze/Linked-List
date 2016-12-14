@@ -14,8 +14,8 @@ function bookmarkContent(){
           ${userUrl}
         </h4>
         <hr>
-        <span class = "read">read</span>
-        <span class = "delete">delete</span>
+        <span class = "read">Read</span>
+        <span class = "delete">Delete</span>
      </div>`
  );
 }
@@ -25,7 +25,8 @@ $(userEnterButton).on("click", function(){
 });
 
   $(".right-section").on("click", ".read", function(){
-    $(this).toggleClass("read-bookmark");
+    $(this).parent("div").toggleClass("read-bookmark bookmark-card ");
+    $(this).toggleClass("read-link");
 });
 
 $(".right-section").on("click", ".delete", function(){
