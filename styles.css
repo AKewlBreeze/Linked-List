@@ -3,7 +3,7 @@ display:flex;
 /*flex-direction: row;
 display: inline-flex
 justify-content: space-around;*/
-border: solid orange 3px;
+/*border: solid orange 3px;*/
 height: 100vh;
 }
 
@@ -20,7 +20,7 @@ height: 100vh;
 .left-section{
   width:50%;
   height: 100%;
-  border: solid 3px black;
+  /*border: solid 3px black;*/
   text-align: center;
   background-color: #455A64;
   /*padding: 15vh 0;*/
@@ -82,9 +82,6 @@ padding-right: 5px;
 }
 
 /*right section*/
-
-
-
 .bookmark-cards-display{
 background-color: #455A64;
 border: solid red 3px;
@@ -97,7 +94,7 @@ width:100%;
 
 .right-section{
   width:50%;
-  border:solid 3px red;
+  /*border:solid 3px red;*/
   height:100%;
   font-family:'Open Sans', sans-serif;
   text-align: center;
@@ -117,7 +114,7 @@ width:100%;
   text-align: left;
 }
 
-.read-bookmark-card{
+.read-bookmark{
   background-color: #F2F4F4;
 }
 

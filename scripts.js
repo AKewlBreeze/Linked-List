@@ -1,22 +1,27 @@
 //
-// var userWebsiteTitle = $(".user-input-title").val();
-// var userWebsiteUrl = $(".user-input-url");
+
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
 var userInputTitle = $(".user-input-title");
-var deleteInputRightSection =$(".enter-button");
 
+$(userEnterButton).on("click", function(){
+  var userWebsiteTitle = $(".user-input-title").val();
+  var userWebsiteUrl = $(".user-input-url").val();
+    userError(userWebsiteTitle,userWebsiteUrl);
+})
 
-function bookmarkContent(){
-  var userTitle = $(".user-input-title").val();
-  var userUrl = $(".user-input-url").val();
+$(".right-section").on("click", ".delete", function(){
+  $(this).parent("div").remove();
+});
+
+function bookmarkContent(title,url){
   $(".right-section").prepend(
    `  <div class="bookmark-card">
-          <h4 class = "title-underline">${userTitle}
+          <h4 class = "title-underline">${title}
           </h4>
           <hr>
         <h4 class ="url-underline">
-          ${userUrl}
+          ${url}
         </h4>
         <hr>
         <span class = "read">read</span>
@@ -25,29 +30,10 @@ function bookmarkContent(){
  );
 }
 
-$(userEnterButton).on("click", function(){
-    bookmarkContent();
-    console.log(bookmarkContent);
-    read();
-});
-
-// deleteInputRightSection.addEventListener("click", function(){
-//   bookmarkContent
-// })
-
-// function deleteBookmark (){
-//   var clear= "";
-//   userInputTitle.innerText = clear;
-//   console.log("hi")
+function userError(title,url){
+  if (title === "" || url === ""){
+    alert("Error, please enter a valid Title and URL");
+  } else {
+    bookmarkContent(title,url);
+  }
 }
-// function read (){
-//   $(".read").on("click", function(){
-//     console.log("yep");
-//     $(this).toggleClass("read-bookmark");
-//   });
-
-
-
-// $(userEnterButton).click (function(){
-//   if (userInputTitle = " ") {
-//     console.log('hi"');
