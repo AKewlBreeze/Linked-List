@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 //
 =======
 >>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
+=======
+
+>>>>>>> origin/sm-third-version
 
 var userEnterButton = $(".enter-button");
 var bookmarkTitle = $(".title-underline");
@@ -34,6 +38,7 @@ function bookmarkContent(title,url){
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function userError(title,url){
   if (title === "" || url === ""){
     alert("Error, please enter a valid Title and URL");
@@ -54,3 +59,25 @@ $(".right-section").on("click", ".delete", function(){
   $(this).parent("div").remove();
 });
 >>>>>>> aacc99e7e1882f6025b1da473967b033319745c7
+=======
+
+function userError(title,url){
+  if (title === "" || url === ""){
+    alert("Error, please enter a valid Title and URL");
+  } else {
+    bookmarkContent(title,url);
+  }
+}
+
+// $(userEnterButton).on("click", function(){
+//     bookmarkContent();
+// });
+
+  $(".right-section").on("click", ".read", function(){
+    $(this).toggleClass("read-bookmark");
+});
+
+$(".right-section").on("click", ".delete", function(){
+  $(this).parent("div").remove();
+});
+>>>>>>> origin/sm-third-version
